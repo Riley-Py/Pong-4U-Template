@@ -296,12 +296,15 @@ namespace Pong
         /// <param name="winner">The player name to be shown as the winner</param>
         private void GameOver(string winner)
         {
+           
             newGameOk = true;
 
-            // TODO create game over logic
-            // --- stop the gameUpdateLoop
-            // --- show a message on the startLabel to indicate a winner, (may need to Refresh).
-            // --- use the startLabel to ask the user if they want to play again
+
+          
+            startLabel.Text = $"{winner} has won.  Want to play again?";
+            startLabel.Enabled = true;
+            
+
 
         }
 
